@@ -1,0 +1,14 @@
+{
+    "name" : "ZAPFAKE",
+    "short_name" : "zap fake",
+    "background_color" : "#00897b",
+    "theme_color" : "#00897b",
+    "display": "standalone",
+    "start_url" : "/",
+    "icons" : [{
+        "src" : "../assets/img/logo.png",
+        "sizes" : "36x36",
+        "type" : "image/png"
+    }]
+
+}
