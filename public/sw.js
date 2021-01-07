@@ -9,11 +9,14 @@ this.addEventListener('install', function(event) {
                 //
                 '../css/materialize.css',
                 '../css/style.css',
+                '../css/materialdesignicons.css',
+                '../css/materialdesignicons.css.map',
                 //
                 //
                 '../js/jquery-2.1.1.min.js',
                 '../js/materialize.js',
                 '../js/init.js',
+                '../js/camera.js',
                 //'../assets/img/iconappnm.png',
               
                 '../../assets/img/img0.jpg',
@@ -28,6 +31,7 @@ this.addEventListener('install', function(event) {
                 // '../../assets/img/img8.jpg',
                 // '../../assets/img/img9.jpg',
                 // '../../assets/img/img10.jpg',
+                '../fonts/materialdesignicons-webfont.woff2?v5.8.55',
                 //
                 '../manifest.json',
              ]);
