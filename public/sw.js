@@ -1,4 +1,4 @@
-var CACHE_NAME = 'staticV1';
+var CACHE_NAME = 'staticV2';
 
 this.addEventListener('install', function(event) {
     event.waitUntil(
@@ -11,27 +11,27 @@ this.addEventListener('install', function(event) {
                 '../css/style.css',
                 '../css/materialdesignicons.css',
                 '../css/materialdesignicons.css.map',
+                 //
+                 '../js/jquery-3.2.1.min.js',
+                 '../js/materialize.js',
+                 '../js/init.js',                 
+                 '../js/camera.js',                 
+                 //
+                '../assets/img/img0.jpg',
+                '../assets/img/img1.jpg',
+                '../assets/img/img2.jpg',
+                '../assets/img/img3.jpg',
+                '../assets/img/img4.jpg',
+                '../assets/img/img5.jpg',
+                '../assets/img/img6.jpg',
+                '../assets/img/img7.jpg',
+                '../assets/img/img8.jpg',
+                '../assets/img/img9.jpg',
+                '../assets/img/img10.jpg',
+                '../assets/img/icon.ico',
+                '../assets/img/logo.png',
                 //
-                //
-                '../js/jquery-2.1.1.min.js',
-                '../js/materialize.js',
-                '../js/init.js',
-                '../js/camera.js',
-                //'../assets/img/iconappnm.png',
-              
-                '../../assets/img/img0.jpg',
-                '../../assets/img/icon.ico',
-                '../../assets/img/logo.png',
-                // '../../assets/img/img2.jpg',
-                // '../../assets/img/img3.jpg',
-                // '../../assets/img/img4.jpg',
-                // '../../assets/img/img5.jpg',
-                // '../../assets/img/img6.jpg',
-                // '../../assets/img/img7.jpg',
-                // '../../assets/img/img8.jpg',
-                // '../../assets/img/img9.jpg',
-                // '../../assets/img/img10.jpg',
-                '../fonts/materialdesignicons-webfont.woff2?v5.8.55',
+                '../fonts/materialdesignicons-webfont.woff2?v=5.8.55',
                 //
                 '../manifest.json',
              ]);

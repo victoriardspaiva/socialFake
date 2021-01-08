@@ -33,5 +33,32 @@ O que é preciso para implementar
   - Nome da aplicação, (nome que é mostrado ao ser instalada a aplicação)
 -------------------------------------------------------------------------
 
+NATIVA - Você usa um SDK - KIT DE DESENVOLVIMENTO DE SOFTWARE
+	ANDROID APPS NATIVAS - JAVA, kotlin, flutter, GO SDK
+	IOS IPHONE - SWIFT, OBJECT C SDK
+	WINDOWS C#, .Net
+-------------------------------------------------------------------------
+HÍBRIDA - HTML, CSS, JS - BRIDGE - IONIC, XAMARIN MS - CORDOVA
+	  REACT NATIVE - APPS NATIVAS
+-------------------------------------------------------------------------
+WEB - HTML, CSS, JS - APPS - NO CASO TEM A POSSIBILIDADE DO PWA
+
+HTML5 - TROUXE MUITAS API's - Application Programa Interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

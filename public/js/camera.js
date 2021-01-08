@@ -15,7 +15,7 @@ function getUserMedia(constraints) {
       });
     }
   }
-  
+
   function getStream (type) {
     if (!navigator.mediaDevices && !navigator.getUserMedia && !navigator.webkitGetUserMedia &&
       !navigator.mozGetUserMedia && !navigator.msGetUserMedia) {
@@ -43,4 +43,4 @@ function getUserMedia(constraints) {
       .catch(function (err) {
         alert('Error: ' + err);
       });
-  }
+    }

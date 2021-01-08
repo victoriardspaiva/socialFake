@@ -4,11 +4,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Parallax Template - Materialize</title>
+  <title>Social Fake</title>
 
   <!-- CSS  -->
-  <link rel="stylesheet" href="MaterialDesign-Webfont-master/css/materialdesignicons.css" media="all">
- <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/materialdesignicons.css" media="all" />
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="manifest" href="../../manifest.json">
@@ -31,116 +30,98 @@
 <body>
   <div class="navbar-fixed">
     <nav class="teal darken-3 ">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo white-text left">WhatsApp</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-
-        <a id="lupa" class="sidenav-trigger">
-          <i class="mdi mdi-magnify"></i>
-          <i style="margin-left: 40px;" class="mdi mdi-dots-vertical"></i>
-        </a>
+      <div class="nav-wrapper row container">
+        <div class="col s6 m6">
+          <a id="logo-container" style="font-size: 23px;" href="#" class="brand-logo white-text left">WhatsApp</a>
+        </div>
+        <div class="col s6 m6">
+          <a id="lupa" class="sidenav-trigger">
+            <i class="mdi mdi-magnify left"></i>
+            <i style="margin-left: 30px;" class="mdi mdi-dots-vertical left"></i>
+          </a>
+        </div>
 
       </div>
     </nav>
   </div>
 
-
   <ul id="tabs-swipe-demo" class="tabs teal darken-3">
-    <li class="tab col s3"><a class="white-text" href="#test-swipe-0">
-      <i style="margin-top: 12px;" class="mdi mdi-camera small white-text"></i> </a></li>
-    <li class="tab col s3"><a class="white-text" href="#test-swipe-1">Conversas</a></li>
+    <li class="tab col s3"><a class="white-text" href="#test-swipe-0"><i style="margin-top: 12px;"
+          class="mdi mdi-camera small white-text"></i> </a></li>
+    <li class="tab col s3"><a class="white-text active" href="#test-swipe-1">Conversas</a></li>
     <li class="tab col s3"><a class="white-text" href="#test-swipe-2">Status</a></li>
     <li class="tab col s3"><a class="white-text" href="#test-swipe-3">Chamadas</a></li>
   </ul>
-
   <div id="test-swipe-0" class="col s12">
-    <div>
-      <p><button type="button" onclick="getStream('video')">Grab video</button></p>
+    <div class="column">
+      <video width="100%" height="100%" controls autoplay></video>
+      <p><button type="button" onclick="getStream('video')">Abrir Câmera</button></p>
     </div>
-    <video controls autoplay style="height:100%; width: 100%;"></video>
-    <br>
   </div>
-  
-  <!-- Conversas -->
-  <div id="test-swipe-1" class="col s12">
-    <ul class="collection">
-      <% for(let i=0; i < 1; i++){ %>
+
+    <!-- Conversas -->
+    <div id="test-swipe-1" class="col s12">
+      <ul class="collection">
+        <% for (let i = 0; i < dados.length; i++) {%>
         <li class="collection-item avatar">
           <img src="assets/img/img<%=i%>.jpg" alt="" class="circle">
-          <span class="title"><strong>
-              <%= dados[i].nome %>
-            </strong> </span>
-          <p>
-            <%= dados[i].texto %> <br>
+          <span class="title"><strong><%= dados[i].nome %></strong> </span>
+          <p><%= dados[i].texto %> <br>
 
           </p>
-          <a href="#!" class="secondary-content">
-            <%= dados[i].hora %>
-          </a>
+          <a href="#!" class="secondary-content"><%= dados[i].hora %></a>
         </li>
         <% } %>
-    </ul>
+      </ul>
 
-  </div>
+    </div>
 
-  <!-- Staus -->
-  <div id="test-swipe-2" class="col s12">
-    <ul class="collection">
-      <% for(let i=0; i < 1; i++){ %>
+
+    <!-- Staus -->
+    <div id="test-swipe-2" class="col s12">
+      <ul class="collection">
+        <% for(let i = 0; i < dados.length; i++){ %>
         <li class="collection-item avatar">
           <img src="assets/img/img<%=i%>.jpg" alt="" class="circle">
-          <span class="title"><strong>
-              <%= dados[i].nome %>
-            </strong> </span>
-          <p>
-            <%= dados[i].texto %> <br>
+          <span class="title"><strong><%= dados[i].nome %></strong> </span>
+          <p><%= dados[i].texto %> <br>
 
           </p>
-          <a href="#!" class="secondary-content">
-            <%= dados[i].hora %>
-          </a>
+          <a href="#!" class="secondary-content"><%= dados[i].hora %></a>
         </li>
         <% } %>
-    </ul>
-  </div>
+      </ul>
+    </div>
 
-  <!-- Chamadas -->
-  <div id="test-swipe-3" class="col s12">
-    <ul class="collection">
-      <% for(let i=0; i < 1; i++){ %>
+    <!-- Chamadas -->
+    <div id="test-swipe-3" class="col s12">
+      <ul class="collection">
+        <% for(let i = 0; i < dados.length; i++){ %>
         <li class="collection-item avatar">
           <img src="assets/img/img<%=i%>.jpg" alt="" class="circle">
-          <span class="title"><strong>
-              <%= dados[i].nome %>
-            </strong> </span>
-          <p>
-            <%= dados[i].texto %> <br>
+          <span class="title"><strong><%= dados[i].nome %></strong> </span>
+          <p><%= dados[i].texto %> <br>
 
           </p>
-          <a href="#!" class="secondary-content">
-            <%= dados[i].hora %>
-          </a>
+          <a href="#!" class="secondary-content"><%= dados[i].hora %></a>
         </li>
         <% } %>
-    </ul>
-  </div>
+      </ul>
+    </div>
+
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
   <script src="js/camera.js"></script>
+  <script src="js/init.js"></script>
 
   <script>
     $(document).ready(function () {
-      $('.tabs').tabs();
-      $('#tabs-swipe-demo').tabs({ 'swipeable': true });
+      $('ul.tabs').tabs();
+      $('#tabs-swipe-demo').tabs({
+        'swipeable': true
+      });
     });
   </script>
 
